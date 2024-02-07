@@ -14,10 +14,10 @@ const Navbar = () => {
 
     return ( 
         <nav className='NavbarItems'>
-            <a href='/' className='Navbar-logo'>
+            <Link to='/' className='Navbar-logo'>
                 <img src={logo} alt="Girrafe With a Camera"></img>
                 <span className='Navbar-name'>Hazel</span>
-            </a>
+            </Link>
 
             <div className='menu-icons' onClick={handleClick}>
                 <i className={clicked ? "fas fa-times" : "fas fa-bars"} ></i>
@@ -28,9 +28,9 @@ const Navbar = () => {
                 {menuItems.map((item, index)=>{
                      return(
                         <li key={index}>
-                            <a href={item.url} className={item.cName}>
+                            <Link to={item.url} className={item.cName}>
                                 <i className={item.icon}></i>{item.title}
-                            </a>
+                            </Link>
                         </li>
                      )
                 })}

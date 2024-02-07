@@ -12,6 +12,7 @@
   left:50%;
   transform: translate(-50%);
   z-index: 9999;
+  background-color: #ffffff80;
 }
 
 .Navbar-logo img {
@@ -134,7 +135,7 @@ button:hover{
     cursor: pointer;
   }
   .menu-icons i{
-    font-size: 1.2rem;
+    font-size: 2rem;
     color:#222
   }
   .Navbar-logo img {
