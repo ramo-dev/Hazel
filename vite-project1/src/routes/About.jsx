@@ -1,6 +1,8 @@
 import React from 'react';
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
+import Footer from '../components/Footer';
+import AboutData from '../components/AboutData';
 
 const About = () => {
     return ( 
@@ -12,6 +14,8 @@ const About = () => {
                 title='About Me'
                 btnClass='hide'
             />
+            <AboutData />
+            <Footer />
         </>
      );
 }

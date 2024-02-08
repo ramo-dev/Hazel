@@ -1,6 +1,8 @@
 import Navbar from "../components/Navbar";
 import React from 'react';
 import Hero from "../components/Hero";
+import Footer from "../components/Footer";
+import ContactData from "../components/ContactData";
 const Contact = () => {
     return ( 
         <>
@@ -11,6 +13,8 @@ const Contact = () => {
             title='Contact'
             btnClass='hide'
         />
+        <ContactData />
+        <Footer />
     </>
      );
 }

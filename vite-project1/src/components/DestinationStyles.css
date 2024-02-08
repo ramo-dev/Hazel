@@ -6,16 +6,26 @@
 }
 
 .first-des{
+    flex-direction: row;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 4.5rem;
-}
-
-.des-text{
-    width:45%;
     text-align: start;
+}
+.first-des-reverse{
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+    text-align: start;
+}
+.des-text{
+    width:50%;
+    text-align:start;
     font-size: 1.1rem;
+    margin: 1.5rem;
 }
 .des-text h2{
     padding-bottom: 1rem;
@@ -51,8 +61,14 @@
         flex-direction: column-reverse;
         margin-top: 2.5rem;
     }
+    .first-des-reverse{
+        flex-direction: column-reverse;
+        display: flex;
+        margin-top: 2.5rem;
+    }
     .des-text{
         width:100%;
+        
     }
     .image{
         width: 100%;

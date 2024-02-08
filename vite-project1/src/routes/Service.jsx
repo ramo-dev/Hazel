@@ -1,6 +1,8 @@
 import Navbar from "../components/Navbar";
 import React from 'react';
 import Hero from "../components/Hero";
+import Footer from "../components/Footer";
+import Trip from "../components/Trip";
 const Service = () => {
     return ( 
         <>
@@ -11,6 +13,8 @@ const Service = () => {
             title='Services'
             btnClass='hide'
         />
+        <Trip/>
+        <Footer/>
     </>
      );
 }

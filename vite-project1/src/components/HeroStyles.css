@@ -20,7 +20,7 @@ img{
 .hero-text{
     position:absolute;
     left:50%;
-    top:55%;
+    top:45%;
     transform: translate(-50%);
     width:100%;
 }
@@ -51,6 +51,9 @@ img{
     display: none;
 }
 @media  screen and (max-width:555px){
+    .hero-text{
+        top:30%
+    }
     .hero-text h1{
         padding:10px 20px;
     }
