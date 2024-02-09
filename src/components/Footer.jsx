@@ -41,8 +41,11 @@ const Footer = () => {
                     <a href="/">Terms of Service</a>
                     <a href="/">Privacy Policy</a>
                     <a href="/">License</a>
+                    <br></br>
+                    <p  className='name'>Built and managed by <br></br><a href='https://www.instagram.com/dfw_ramo?igsh=bHBoc3k5YmM5YWFp'>Ig:@dfw_ramo</a></p>
                 </div>
             </div>
+           
         </div>
      );
 }

@@ -3,15 +3,22 @@ const AboutData = () => {
     return ( 
 
     <div className="about-container">
-        <h1>Our History</h1>
-                        <p>
-            Hazel is owned and managed by Hazel .In Pvt. Ltd., a leading brand in web designing services and e-commerce solutions. Hazel .In Pvt. Ltd. is counted for its expertise in web solutions and its top ranking business portals. Our invincible expertise and rich experience has raised our spirit to reach ahead from our client's expectation. Commendable success rate of other portals managed by Hazel is a live paradigm of our work excellence.</p>
-        <h1>Our Mission</h1>
+        <h1>My History</h1>
             <p>
-            Our mission is to touch the horizon where our capabilities may successfully meet with the requirements of our clients, that too with ultimate transparency and cost-effectiveness</p>
-        <h1>Our Vision</h1>
+            I'm Hazel Bakhoya, a passionate photographer capturing your life's precious moments and turning them into lasting memories.
+            </p>
+        <h1>My Journey</h1>
             <p>
-            To sow the seeds of par-excellence services with customer centric approach and reap the trust of worldwide clients.</p>
+            Photography has always been a source of joy and creative expression for me. Inspired by the world around me, I strive to capture the essence of light, emotion, and story in every image. With years of experience honed through dedication and learning, I've developed a unique style that reflects my artistic vision and resonates with my clients.
+            </p>
+        <h1>My Mission</h1>
+            <p>
+            To provide you with a personalized and professional photography experience, exceeding your expectations with stunning visuals and exceptional service. Whether it's your wedding day, family portraits, or a special event, I'm here to document your journey with authenticity and artistry.
+            </p>
+        <h1>My Vision</h1>
+        <p>
+        To create enduring photographs that not only capture a moment in time but evoke emotions and tell your unique story. My goal is to leave you with beautiful memories and timeless heirlooms that you can cherish for generations to come.
+        </p>
     </div>
      );
 }

@@ -41,3 +41,15 @@
     padding-bottom: 0.4rem;
     font-size: 1.1rem;
 }
+.name{
+    justify-self:start;
+    font-size: 0.8rem;
+    color:#fff;
+    /* padding-bottom:-5vh */
+}
+.name a{
+    color: #fff;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    text-decoration:none;
+}
