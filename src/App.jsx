@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "./routes/Home";
 import About from './routes/About';
 import Service from "./routes/Service";
@@ -13,12 +13,14 @@ const App = () => {
     <div className='App'>
         
             <Routes>
-              <Route exact path="/" element={<Home/>} />
-              <Route path="/about" element={<About/>} />
-              <Route path="/contact" element={<Contact/>} />
-              <Route path="/service" element={<Service/>} />
-              <Route component={<NotFound/>} />
+              {/* Your individual routes here */}
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/service" element={<Service />} />
+              <Route element={<NotFound />} />
             </Routes>
+
     </div>
    );
 }
