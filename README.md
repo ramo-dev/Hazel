@@ -16,17 +16,16 @@ Make sure you have Node.js installed on your machine. You can download and insta
 
    ```bash
    git clone https://github.com/ramo-dev/Hazel.git
-   cd your-app-name
+   cd Hazel
    ```
 2.Install the dependencies:
-
     ```bash
     npm install
-    ```
+      ```
 3.Development:
     ```bash
     npm run dev
-    ```
+      ```
 4.Folder Structure:
     ```bash
     Hazel-1/
