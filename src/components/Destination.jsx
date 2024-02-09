@@ -8,7 +8,7 @@ import Mountain12 from '../assets/12.jpg'
 const Destination = () => {
     return ( 
         <div className="destination" id="destination">
-            <h1>Popular Destiantion</h1>
+            <h1>Popular Destination</h1>
             <p>Tours give you the opportunity to see a lot, within a time frame.</p>
            
             <DestinationData
