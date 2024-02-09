@@ -44,5 +44,5 @@ Make sure you have Node.js installed on your machine. You can download and insta
    ```
 
 5.License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [lICENCE](#LICENCE). file for details.
   
