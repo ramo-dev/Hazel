@@ -1,9 +1,11 @@
 import Navbar from "../components/Navbar";
+import NotFoundData from "../components/NotFoundData";
+import '../components/NotFoundStyles.css'
 const NotFound = () => {
     return ( 
         <>
         <Navbar/>
-        <h1>Page not found</h1>
+        <NotFoundData/>
         </>
      );
 }

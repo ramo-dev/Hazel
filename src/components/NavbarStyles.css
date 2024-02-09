@@ -14,7 +14,7 @@
   transform: translate(-50%);
   z-index: 9999;
   background: rgba(255, 255, 255, 0.438);
-  -webkit-backdrop-filter: blur(3px);
+  /* -webkit-backdrop-filter: blur(3px); */
 border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -68,6 +68,10 @@ button{
   border:none;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+}
+button a{
+  text-decoration: none;
+  color: #222;
 }
 button:hover{
   background-color: #151516;

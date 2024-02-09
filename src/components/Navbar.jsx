@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { menuItems } from './MenuItems';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png'
+import NotFound from '../routes/NotFound';
 
 const Navbar = () => {
 
@@ -34,7 +35,7 @@ const Navbar = () => {
                         </li>
                      )
                 })}
-                <button>Sign Up</button>
+                <button><Link to={NotFound}>Sign Up</Link></button>
             </ul>
         </nav>
     );
