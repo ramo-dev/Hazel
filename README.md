@@ -19,15 +19,17 @@ Make sure you have Node.js installed on your machine. You can download and insta
    cd Hazel
    ```
 2.Install the dependencies:
-    ```bash
-    npm install
-      ```
+
+   ```bash
+   npm install
+   ```
 3.Development:
-    ```bash
+
+   ```bash
     npm run dev
-      ```
+   ```
 4.Folder Structure:
-    ```bash
+   ```bash
     Hazel-1/
 ├── src/                    # Source files
 │   ├── components/         # React components
@@ -39,7 +41,7 @@ Make sure you have Node.js installed on your machine. You can download and insta
 ├── dist/                   # Production build output
 ├── package.json            # Project manifest
 └── README.md               # Project README (you are here)
-    ```
+   ```
 
 5.License
 This project is licensed under the MIT License. See the LICENSE file for details.
