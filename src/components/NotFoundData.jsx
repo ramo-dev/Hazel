@@ -19,7 +19,7 @@ const NotFoundData = () => {
 		Look like you're lost
 		</h3>
 		
-		<p>the page you are looking for is not avaible!</p>
+		<p>the page you are looking for<br></br> is not avaible!</p>
 		
 		<a href="/" className="link_404">Go to Home</a>
 	</div>
