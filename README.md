@@ -2,6 +2,8 @@
 
 Welcome to Hazel App! This is a React application built using Vite.
 
+<img src="https://github.com/ramo-dev/Hazel/blob/main/HAzel.png?raw=true">
+
 ## Getting Started
 
 To get started with this project, follow these steps:
