@@ -1,22 +1,35 @@
 
 
 "use client";
-
-// /photos/[id]/page.js
 import React, { useEffect, useState } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
-import { MapPin,Loader2 } from "lucide-react";
+import { MapPin, Loader2 } from "lucide-react";
 import { db } from '../../../utils/firebase';
 import { doc, getDoc } from 'firebase/firestore';
-import Image from "next/image"
+import Image from "next/image";
 
-const PhotoPage = ({ params }) => {
+interface Photo {
+  mainPhoto: string;
+  title: string;
+  timestamp: string;
+  location: string;
+  description: string;
+  otherPhotos?: string[];
+}
+
+interface PhotoPageProps {
+  params: {
+    id: string;
+  };
+}
+
+const PhotoPage: React.FC<PhotoPageProps> = ({ params }) => {
   const router = useRouter();
   const { id } = params;
   const pathname = usePathname();
   console.log(pathname);
 
-  const [photo, setPhoto] = useState(null);
+  const [photo, setPhoto] = useState<Photo | null>(null);
 
   useEffect(() => {
     const fetchPhoto = async () => {
@@ -25,7 +38,7 @@ const PhotoPage = ({ params }) => {
           const docRef = doc(db, 'photos', id);
           const docSnap = await getDoc(docRef);
           if (docSnap.exists()) {
-            setPhoto(docSnap.data());
+            setPhoto(docSnap.data() as Photo);
           } else {
             console.warn('Document not found');
           }
@@ -53,9 +66,9 @@ const PhotoPage = ({ params }) => {
         <img
           src={photo.mainPhoto}
           alt={photo.title}
-         className="transition-opacity duration-700 ease-in-out h-full"
+          className="transition-opacity duration-700 ease-in-out h-full"
         />
-       </div>
+      </div>
       <div className="flex justify-between items-center my-4">
         <small className="text-muted-foreground w-full border-b w-max">{photo.timestamp}</small>
 
@@ -94,3 +107,4 @@ const PhotoPage = ({ params }) => {
 };
 
 export default PhotoPage;
+

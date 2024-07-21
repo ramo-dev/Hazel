@@ -1,6 +1,7 @@
 
+import React from "react";
 
-export default function Page() {
+const Page: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Fullscreen Image Container */}
@@ -11,8 +12,6 @@ export default function Page() {
           className="absolute inset-0 object-cover w-full h-full"
         />
         <div className="absolute inset-0 flex flex-col justify-between">
-          {/* Navbar */}
-                   
           {/* Main Content */}
           <div className="relative flex flex-col md:items-center justify-center h-full p-6 text-white bg-black bg-opacity-50">
             <h1 className="text-5xl font-bold">Hazel Bhakhoya</h1>
@@ -21,7 +20,9 @@ export default function Page() {
         </div>
       </div>
       {/* Footer */}
-      </div>
+    </div>
   );
-}
+};
+
+export default Page;
 

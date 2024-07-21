@@ -1,10 +1,15 @@
-"use client"
+
+"use client";
 import React from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { FaCircleArrowLeft } from "react-icons/fa6";
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   const router = useRouter();
 
   const goBack = () => {
@@ -23,5 +28,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       {children}
     </main>
   );
-}
+};
+
+export default Layout;
 
