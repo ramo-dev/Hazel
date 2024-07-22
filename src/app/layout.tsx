@@ -7,10 +7,8 @@ import "./globals.css";
 import { FaBars, FaBehance, FaInstagram } from 'react-icons/fa';
 import {
   Sheet,
-  SheetClose,
   SheetContent,
-  SheetHeader,
-  SheetTitle,
+
   SheetTrigger,
 } from '@/components/ui/sheet';
 
