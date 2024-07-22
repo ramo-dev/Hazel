@@ -2,7 +2,7 @@
 
 "use client";
 import React, { useEffect, useState } from 'react';
-import { useRouter, usePathname } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { MapPin, Loader2 } from "lucide-react";
 import { db } from '../../../utils/firebase';
 import { doc, getDoc } from 'firebase/firestore';
@@ -23,8 +23,10 @@ interface PhotoPageProps {
   };
 }
 
+
+
 const PhotoPage: React.FC<PhotoPageProps> = ({ params }) => {
-  const router = useRouter();
+
   const { id } = params;
   const pathname = usePathname();
   console.log(pathname);

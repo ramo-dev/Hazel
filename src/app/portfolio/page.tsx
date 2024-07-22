@@ -63,7 +63,7 @@ const Gallery: React.FC = () => {
           />
           <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out p-4">
             <h1 className="text-xl font-bold text-white mb-2">{image.title}</h1>
-            <p className="text-gray-200 truncate-text ">{image.description}</p>
+            <p className="text-gray-200 line-clamp-3">{image.description}</p>
             <div className="flex gap-6 mt-20">
               <Button variant="ghost" className="hover:bg-background/50" onClick={() => handleShare(image.id)}>
                 <Share2 className="text-4xl" />
