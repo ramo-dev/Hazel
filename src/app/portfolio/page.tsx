@@ -8,7 +8,7 @@ import { LuLoader2 } from "react-icons/lu";
 import { Button } from "@/components/ui/button";
 import { Share2, ExternalLink } from "lucide-react";
 import { useRouter } from "next/navigation";
-import ShareDialog from "./ShareBox.tsx";
+import ShareDialog from "./ShareBox";
 
 // Define the type for an image
 interface Image {
