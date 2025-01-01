@@ -19,7 +19,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <main className="py-20">
       <Button
-        variant="ghost"
+        variant="link"
         className="rounded-full md:ms-2 h-12 md:mb-4 mb-2 hover:opacity-60 transition-all"
         onClick={goBack}
       >

@@ -8,7 +8,7 @@ import { LuLoader2 } from "react-icons/lu";
 import { Button } from "@/components/ui/button";
 import { Share2, ExternalLink } from "lucide-react";
 import { useRouter } from "next/navigation";
-import ShareDialog from "./ShareBox";
+import ShareDialog from "./ShareBox.tsx";
 
 // Define the type for an image
 interface Image {
@@ -55,7 +55,7 @@ const Gallery: React.FC = () => {
   return (
     <div className="gallery mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6  md:px-6 px-3">
       {images.map((image) => (
-        <Card key={image.id} className="relative shadow-lg rounded-none overflow-hidden group">
+        <Card key={image.id} className=" cursor-pointer relative shadow-lg rounded-none overflow-hidden group">
           <img
             alt={image.description}
             src={image.mainPhoto}
